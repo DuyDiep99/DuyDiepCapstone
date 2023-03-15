@@ -1,7 +1,7 @@
 <html>
 <body style="background-color: pink;">
     <div >
-        <h2>AirBnb Price Prediction</h2>
+        <h2>Price Prediction of Airbnb</h2>
         <form action="/price" method="POST" style="text-align: center;">
             <label for="bathrooms">Number of Bathroom(s)</label>
             <input id="bathrooms" name="bathrooms" type="number" step="1" >
@@ -9,7 +9,7 @@
             <label for="bedrooms">Number of Bedroom(s)</label>
             <input id="bedrooms" name="bedrooms" type="number" step="1">
             <br>
-            <label for="room_type">Choose a Room Type:</label>
+            <label for="room_type">Choose a Type of Room:</label>
             <select id="room_type" name="room_type" type="number">
             <option value=0>Apartment</option>
             <option value=1>Private Room</option>
@@ -21,25 +21,32 @@
     </div>
 
     <div>
-        <h2>AirBnb Visualization Reports</h2>
+        <h2>Visualization Reports of Airbnb within Boston</h2>
         <figure style="text-align: center;">
             <img src="../static/price_distribution.png" alt="Boston AirBnb Price Distribution" >
             <figcaption>
-                Figure 1 - AirBnb Price Distribution in Boston area. Blue dots represent the average price of that area
+                Figure 1 - Distribution of Airbnb Price in Boston area.
+                Blue dots represent the average price of area
             </figcaption> 
         </figure>  
         <figure style="text-align: center;">
             <img src="../static/roomtype.png" alt="Room Type vs Price" >
             <figcaption>
-                Figure 2 - Room Type vs. AirBnb price
+                Figure 2 - Airbnb price vs Type of Room
             </figcaption> 
-        </figure>   
-        <div style="display: inline-flex;">
-            <figure style="text-align: center;">
-                <img src="../static/line_price_trend.png" alt="Boston AirBnb Price Distribution" >
-            </figure>  
+        </figure>
+        <div style="display: inline;">
             <figure style="text-align: center;">
                 <img src="../static/bar_line_trend.png" alt="Room Type vs Price" >
+                <figcaption>
+                    Figure 3 - Bar graph of Airbnb price trends over months
+                </figcaption>
+            </figure>
+            <figure style="text-align: center;">
+                <img src="../static/line_price_trend.png" alt="Boston AirBnb Price Distribution" >
+                <figcaption>
+                    Figure 4 - Line graph of Airbnb price trends over months
+                </figcaption>
             </figure>
         </div>        
     </div>
